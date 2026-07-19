@@ -11,7 +11,7 @@ import LearningCenter from './pages/LearningCenter';
 import Login from './pages/Login';
 import CyberScore from './pages/CyberScore';
 import ComplaintGenerator from './pages/ComplaintGenerator';
-import InvestmentShield from './pages/InvestmentShield';
+
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
           <Route path="cyber-score" element={<CyberScore />} />
           <Route path="login" element={<Login />} />
           <Route path="complaint-generator" element={<ComplaintGenerator />} />
-          <Route path="investment-shield" element={<InvestmentShield />} />
+
           <Route path="govt-portals" element={<GovtPortals />} />
         </Route>
       </Routes>

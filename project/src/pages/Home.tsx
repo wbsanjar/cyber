@@ -48,13 +48,7 @@ const features = [
     path: '/learning',
     color: 'from-amber-500 to-orange-500',
   },
-  {
-    icon: TrendingUp,
-    title: 'Investment Scam Shield',
-    description: 'Detect Telegram/Trading/Investment scams, check platforms, and report fraudsters.',
-    path: '/investment-shield',
-    color: 'from-red-500 to-orange-500',
-  },
+
 ];
 
 const scamTypes = [

@@ -11,14 +11,14 @@ import {
   BookOpen,
   User,
   FileText,
-  TrendingUp,
+
 } from 'lucide-react';
 
 const navItems = [
   { path: '/', label: 'Home', icon: Shield },
   { path: '/chatbot', label: 'AI Assistant', icon: MessageCircle },
   { path: '/scam-detector', label: 'Scam Detector', icon: Search },
-  { path: '/investment-shield', label: 'Investment Shield', icon: TrendingUp },
+
 
   { path: '/complaint-generator', label: 'Complaint Generator', icon: FileText },
   { path: '/emergency', label: 'Emergency', icon: Phone },
