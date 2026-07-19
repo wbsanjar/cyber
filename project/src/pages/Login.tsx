@@ -28,7 +28,12 @@ export default function Login() {
   };
 
   const handleGoogleSignIn = async () => {
-    await supabase.auth.signInWithOAuth({ provider: 'google' });
+    try {
+      await supabase.auth.signInWithOAuth({ provider: 'google' });
+    } catch (err) {
+      console.error('Google sign-in error:', err);
+      alert('Sign-in failed. Please try again later.');
+    }
   };
 
   return (
@@ -97,7 +102,7 @@ export default function Login() {
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                    placeholder="Aapka naam"
+                    placeholder="Your name"
                     className="input-field pl-10"
                   />
                 </div>

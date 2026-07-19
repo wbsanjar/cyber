@@ -23,35 +23,28 @@ const features = [
   {
     icon: MessageCircle,
     title: 'AI Chatbot',
-    description: 'Baat karein Hindi, English ya Hinglish mein. AI aapki problem samajh kar turant solution dega.',
+    description: 'Talk in Hindi, English, or Hinglish. AI will understand your problem and provide an instant solution.',
     path: '/chatbot',
     color: 'from-blue-500 to-cyan-500',
   },
   {
     icon: Search,
     title: 'Scam Detector',
-    description: 'Screenshot, SMS, Email upload karein. AI fake links, OTP scams, aur frauds detect karega.',
+    description: 'Upload screenshots, SMS, or emails. AI will detect fake links, OTP scams, and frauds.',
     path: '/scam-detector',
     color: 'from-purple-500 to-pink-500',
   },
   {
     icon: QrCode,
     title: 'QR Scanner',
-    description: 'QR code scan karein. Fake QR se bachne ke liye UPI ID verify karein.',
+    description: 'Scan QR codes. Verify UPI ID to stay safe from fake QR codes.',
     path: '/qr-scanner',
     color: 'from-green-500 to-emerald-500',
   },
   {
-    icon: AlertTriangle,
-    title: 'Report Fraud',
-    description: 'Fraud report karein. AI automatic complaint banayega aur guide karega.',
-    path: '/report-fraud',
-    color: 'from-red-500 to-rose-500',
-  },
-  {
     icon: BookOpen,
     title: 'Learning Center',
-    description: 'Daily quiz, awareness tips, fake vs real examples seekhein.',
+    description: 'Daily quizzes, awareness tips, and learn to identify fake vs real examples.',
     path: '/learning',
     color: 'from-amber-500 to-orange-500',
   },
@@ -102,25 +95,24 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold tracking-tight">
-                <span className="text-white">Cyber Fraud se </span>
-                <span className="gradient-text">Surakshit</span>
+                <span className="text-white">Stay </span>
+                <span className="gradient-text">Protected</span>
                 <br />
-                <span className="text-white">Rahiye AI ke saath</span>
+                <span className="text-white">from Cyber Fraud with AI</span>
               </h1>
 
               <p className="max-w-xl text-lg sm:text-xl text-gray-300 leading-relaxed">
-                AI chatbot se baat karein, scams detect karein, fraud report karein.
-                Hindi, English ya Hinglish - jo bhi aapko suit kare.
+                Chat with AI, detect scams, report frauds. Hindi, English, or Hinglish - whatever suits you best.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/chatbot" className="btn-primary text-lg flex items-center justify-center gap-2">
                   <MessageCircle className="w-5 h-5" />
-                  <span>AI se Baat Karein</span>
+                  <span>Chat with AI</span>
                 </Link>
-                <Link to="/report-fraud" className="btn-secondary text-lg flex items-center justify-center gap-2">
+                <Link to="/scam-detector" className="btn-secondary text-lg flex items-center justify-center gap-2">
                   <AlertTriangle className="w-5 h-5" />
-                  <span>Fraud Report Karein</span>
+                  <span>Report Fraud</span>
                 </Link>
               </div>
 
@@ -165,10 +157,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-display font-bold text-white mb-4">
-              Shaktishali Features
+              Powerful Features
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              AI-powered tools jo aapko cyber frauds se protect karenge
+              AI-powered tools that will protect you from cyber frauds
             </p>
           </div>
 
@@ -289,10 +281,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-display font-bold text-white mb-4">
-              Emergency Meed Sahayata
+              Emergency Assistance
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Agar aap cyber fraud ka shikar ho gaye hain, turant help lein
+              If you have been a victim of cyber fraud, get immediate help
             </p>
           </div>
 
@@ -322,7 +314,7 @@ export default function Home() {
             </Link>
 
             <Link
-              to="/report-fraud"
+              to="/scam-detector"
               className="card-hover group text-center p-8"
             >
               <div className="w-16 h-16 mx-auto rounded-full bg-amber-500/20 flex items-center justify-center mb-4 group-hover:bg-amber-500/30 transition-colors">
@@ -395,10 +387,10 @@ export default function Home() {
           <div className="card p-8 sm:p-12 bg-gradient-to-br from-primary-600/20 to-cyan-600/20 border-primary-500/30">
             <Smartphone className="w-12 h-12 text-primary-400 mx-auto mb-6" />
             <h2 className="text-2xl sm:text-3xl font-display font-bold text-white mb-4">
-              Apne Cyber Safety Score Check Karein
+              Check Your Cyber Safety Score
             </h2>
             <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-              Password strength, 2FA settings, device security - sab check karein aur apna safety score jaanein
+              Password strength, 2FA settings, device security - check everything and know your safety score
             </p>
             <Link to="/cyber-score" className="btn-primary inline-flex items-center gap-2">
               <Lock className="w-5 h-5" />

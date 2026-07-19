@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { SignInButton, Show, UserButton } from '@clerk/react';
 import {
   Shield,
   Menu,
   X,
   MessageCircle,
   Search,
-  AlertTriangle,
   Phone,
   BookOpen,
   User,
@@ -17,9 +17,10 @@ const navItems = [
   { path: '/', label: 'Home', icon: Shield },
   { path: '/chatbot', label: 'AI Assistant', icon: MessageCircle },
   { path: '/scam-detector', label: 'Scam Detector', icon: Search },
-  { path: '/report-fraud', label: 'Report Fraud', icon: AlertTriangle },
+
   { path: '/complaint-generator', label: 'Complaint Generator', icon: FileText },
   { path: '/emergency', label: 'Emergency', icon: Phone },
+  { path: '/govt-portals', label: 'Govt Portals', icon: FileText },
   { path: '/learning', label: 'Learning', icon: BookOpen },
 ];
 
@@ -69,13 +70,17 @@ export default function Navbar() {
             >
               My Score
             </Link>
-            <Link
-              to="/login"
-              className="flex items-center space-x-2 btn-primary text-sm"
-            >
-              <User className="w-4 h-4" />
-              <span>Login</span>
-            </Link>
+            <Show when="signed-out">
+              <SignInButton>
+                <button className="flex items-center space-x-2 btn-primary text-sm">
+                  <User className="w-4 h-4" />
+                  <span>Login</span>
+                </button>
+              </SignInButton>
+            </Show>
+            <Show when="signed-in">
+              <UserButton />
+            </Show>
           </div>
 
           <button
@@ -117,13 +122,18 @@ export default function Navbar() {
               >
                 My Cyber Score
               </Link>
-              <Link
-                to="/login"
-                onClick={() => setIsOpen(false)}
-                className="block px-4 py-3 btn-primary text-center"
-              >
-                Login / Register
-              </Link>
+              <Show when="signed-out">
+                <SignInButton>
+                  <button className="w-full block px-4 py-3 btn-primary text-center">
+                    Login / Register
+                  </button>
+                </SignInButton>
+              </Show>
+              <Show when="signed-in">
+                <div className="px-4 py-3">
+                  <UserButton />
+                </div>
+              </Show>
             </div>
           </div>
         </div>

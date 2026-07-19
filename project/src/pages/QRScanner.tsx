@@ -135,7 +135,7 @@ export default function QRScanner() {
             </div>
           </div>
           <p className="text-gray-400 max-w-xl mx-auto">
-            QR code scan karein ya UPI ID manually enter karein. AI verify karega ki QR safe hai ya nahi.
+            Scan a QR code or manually enter a UPI ID. AI will verify whether the QR is safe or not.
           </p>
         </div>
 

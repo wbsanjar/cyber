@@ -150,7 +150,7 @@ export default function CyberScore() {
             </div>
           </div>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Apni cyber safety score check karein. Password strength, 2FA settings, device security - sab check karein.
+            Check your cyber safety score. Password strength, 2FA settings, device security - check everything.
           </p>
         </div>
 

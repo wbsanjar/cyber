@@ -64,7 +64,7 @@ export default function Emergency() {
             </div>
           </div>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Agar aap cyber fraud ka shikar ho gaye hain, turant yahan se help lein.
+            If you have been a victim of cyber fraud, get immediate help from here.
           </p>
         </div>
 

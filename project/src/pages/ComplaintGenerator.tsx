@@ -717,7 +717,7 @@ Recommended Next Steps
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold text-white">{t('User Details', 'उपयोगकर्ता विवरण')}</h2>
-                  <p className="text-sm text-gray-400">{t('Apna basic information dein', 'अपनी बुनियादी जानकारी दें')}</p>
+                  <p className="text-sm text-gray-400">{t('Enter your basic information', 'अपनी बुनियादी जानकारी दें')}</p>
                 </div>
               </div>
 
@@ -730,7 +730,7 @@ Recommended Next Steps
                       type="text"
                       value={formData.name}
                       onChange={(e) => updateForm('name', e.target.value)}
-                      placeholder={t('Aapka naam', 'आपका नाम')}
+                      placeholder={t('Your name', 'आपका नाम')}
                       className="input-field pl-10"
                     />
                   </div>
@@ -784,7 +784,7 @@ Recommended Next Steps
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold text-white">{t('Fraud Details', 'धोखाधड़ी विवरण')}</h2>
-                  <p className="text-sm text-gray-400">{t('Fraud ke baare mein details bataen', 'धोखाधड़ी के बारे में विवरण बताएं')}</p>
+                  <p className="text-sm text-gray-400">{t('Provide details about the fraud', 'धोखाधड़ी के बारे में विवरण बताएं')}</p>
                 </div>
               </div>
 
@@ -853,7 +853,7 @@ Recommended Next Steps
                       type="text"
                       value={formData.fraudsterMobile}
                       onChange={(e) => updateForm('fraudsterMobile', e.target.value)}
-                      placeholder={t('Fraudster ka mobile number', 'धोखेबाज का मोबाइल नंबर')}
+                      placeholder={t("Fraudster's mobile number", 'धोखेबाज का मोबाइल नंबर')}
                       className="input-field pl-10"
                     />
                   </div>
@@ -887,7 +887,7 @@ Recommended Next Steps
               </div>
 
               <div className="mb-4">
-                <label className="block mb-2 text-sm text-gray-300">{t('Description - "Kya hua?"', 'विवरण - "क्या हुआ?"')}</label>
+                <label className="block mb-2 text-sm text-gray-300">{t('Description - "What happened?"', 'विवरण - "क्या हुआ?"')}</label>
                 <textarea
                   value={formData.description}
                   onChange={(e) => updateForm('description', e.target.value)}
@@ -924,7 +924,7 @@ Recommended Next Steps
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold text-white">{t('Evidence Upload', 'सबूत अपलोड')}</h2>
-                  <p className="text-sm text-gray-400">{t('Saboot upload karein', 'सबूत अपलोड करें')}</p>
+                  <p className="text-sm text-gray-400">{t('Upload evidence', 'सबूत अपलोड करें')}</p>
                 </div>
               </div>
 
@@ -1025,7 +1025,7 @@ Recommended Next Steps
                 </div>
                 <h2 className="text-xl font-semibold text-white">{t('AI Analysis Results', 'AI विश्लेषण परिणाम')}</h2>
                 <p className="text-gray-400 mt-1">
-                  {t('AI ne aapki complaint ka vishleshan kar liya hai', 'AI ने आपकी शिकायत का विश्लेषण कर लिया है')}
+                  {t('AI has analyzed your complaint', 'AI ने आपकी शिकायत का विश्लेषण कर लिया है')}
                 </p>
               </div>
 
@@ -1121,7 +1121,7 @@ Recommended Next Steps
                 </div>
                 <h2 className="text-xl font-semibold text-white">{t('Documents Generated', 'दस्तावेज़ तैयार')}</h2>
                 <p className="text-gray-400 mt-1">
-                  {t('Aapke liye 6 documents taiyar hain', 'आपके लिए 6 दस्तावेज़ तैयार हैं')}
+                  {t('6 documents are ready for you', 'आपके लिए 6 दस्तावेज़ तैयार हैं')}
                 </p>
               </div>
 

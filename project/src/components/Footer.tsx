@@ -28,7 +28,7 @@ export default function Footer() {
               <li><Link to="/chatbot" className="text-gray-400 hover:text-primary-400 transition-colors text-sm">AI Chatbot</Link></li>
               <li><Link to="/scam-detector" className="text-gray-400 hover:text-primary-400 transition-colors text-sm">Scam Detector</Link></li>
               <li><Link to="/qr-scanner" className="text-gray-400 hover:text-primary-400 transition-colors text-sm">QR Scanner</Link></li>
-              <li><Link to="/report-fraud" className="text-gray-400 hover:text-primary-400 transition-colors text-sm">Report Fraud</Link></li>
+              <li><Link to="/scam-detector" className="text-gray-400 hover:text-primary-400 transition-colors text-sm">Report Fraud</Link></li>
             </ul>
           </div>
 

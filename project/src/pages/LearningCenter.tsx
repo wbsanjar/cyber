@@ -35,7 +35,7 @@ const modules: Module[] = [
   {
     id: 'otp-safety',
     title: 'OTP Safety',
-    description: 'OTP kab share karna chahiye aur kab nahi',
+    description: 'When should you share OTP and when you should not',
     category: 'Banking Security',
     icon: '🔐',
     lessons: 5,
@@ -43,24 +43,24 @@ const modules: Module[] = [
     quizzes: [
       {
         id: 'q1',
-        question: 'Bank official OTP maange to kya karein?',
-        options: ['OTP de dein', 'OTP na dein', 'OTP email mein bhejein', 'OTP WhatsApp par share karein'],
+        question: 'What should you do if a bank official asks for OTP?',
+        options: ['Share the OTP', 'Do not share the OTP', 'Send OTP via email', 'Share OTP on WhatsApp'],
         correct: 1,
-        explanation: 'Bank officials kabhi bhi OTP nahi maangte. Ye scam hai!',
+        explanation: 'Bank officials never ask for OTP. This is a scam!',
       },
       {
         id: 'q2',
-        question: 'OTP kitne logon ko batana chahiye?',
-        options: ['Family members', 'Bank staff', 'Police', 'Kisi ko nahi'],
+        question: 'How many people should you share OTP with?',
+        options: ['Family members', 'Bank staff', 'Police', 'Nobody'],
         correct: 3,
-        explanation: 'OTP kisi ko bhi share nahi karna chahiye, chahe wo family member ho ya bank staff.',
+        explanation: 'OTP should not be shared with anyone, whether a family member or bank staff.',
       },
     ],
   },
   {
     id: 'phishing',
     title: 'Phishing Awareness',
-    description: 'Fake emails aur websites pehchanein',
+    description: 'Identify fake emails and websites',
     category: 'Online Safety',
     icon: '🎣',
     lessons: 4,
@@ -68,17 +68,17 @@ const modules: Module[] = [
     quizzes: [
       {
         id: 'q1',
-        question: 'Email mein "Click here to verify account" link hai. Kya karein?',
-        options: ['Click kar dein', 'Link hover karke check karein', 'Reply dein', 'Forward karein'],
+        question: 'Email has a "Click here to verify account" link. What should you do?',
+        options: ['Click on it', 'Hover over the link to check', 'Reply to it', 'Forward it'],
         correct: 1,
-        explanation: 'Hover karke actual URL dekhein. Fake links mein spelling errors ya suspicious domain honge.',
+        explanation: 'Hover over the link to check the actual URL. Fake links often have spelling errors or suspicious domains.',
       },
     ],
   },
   {
     id: 'upi-safety',
     title: 'UPI Safety',
-    description: 'UPI payments mein kaise safe rahein',
+    description: 'How to stay safe in UPI payments',
     category: 'Payment Security',
     icon: '💳',
     lessons: 6,
@@ -86,27 +86,27 @@ const modules: Module[] = [
     quizzes: [
       {
         id: 'q1',
-        question: '"Receive money" ke liye app open karne ko kahein to?',
-        options: ['App open karein', 'Number verify karein', 'Ignore karein', 'OTP share karein'],
+        question: 'If someone asks you to open the app to "Receive money", what should you do?',
+        options: ['Open the app', 'Verify the number', 'Ignore it', 'Share OTP'],
         correct: 2,
-        explanation: '"Receive money" ke liye app open karne ki jarurat nahi hoti. Ye scam hai!',
+        explanation: 'You do not need to open the app to "Receive money". This is a scam!',
       },
     ],
   },
 ];
 
 const tips = [
-  { title: 'Bank Call Received?', tip: 'Bank kabhi OTP nahi maangta. Call pe details share nahi karein.', severity: 'high' },
-  { title: 'Link Received?', tip: 'Hover karke URL check karein. Suspicious link pe click nahi karein.', severity: 'medium' },
-  { title: 'QR Scan Request?', tip: 'Payment ke liye QR scan karein. "Receive" ke liye nahi.', severity: 'high' },
-  { title: 'Job Offer?', tip: 'Job ke liye paise nahi dete. Registration fee fake hai.', severity: 'high' },
+  { title: 'Bank Call Received?', tip: 'Banks never ask for OTP. Do not share details on calls.', severity: 'high' },
+  { title: 'Link Received?', tip: 'Hover over to check the URL. Do not click on suspicious links.', severity: 'medium' },
+  { title: 'QR Scan Request?', tip: 'Scan QR for payment only. Not for "Receive" requests.', severity: 'high' },
+  { title: 'Job Offer?', tip: 'Jobs never require upfront payment. Registration fees are fake.', severity: 'high' },
 ];
 
 const fakeVsReal = [
   { type: 'Website URL', fake: 'paytm-verify.xyz', real: 'paytm.com', indicator: 'Extra words & wrong domain' },
   { type: 'Email Address', fake: 'support@paytm-alert.com', real: 'noreply@paytm.com', indicator: 'Different domain' },
-  { type: 'Phone Number', fake: 'Mobile number se call', real: 'Official helpline', indicator: 'Banks use landlines' },
-  { type: 'WhatsApp Message', fake: 'Unknown number se', real: 'Verified business account', indicator: 'Green tick check karein' },
+  { type: 'Phone Number', fake: 'Call from mobile number', real: 'Official helpline', indicator: 'Banks use landlines' },
+  { type: 'WhatsApp Message', fake: 'From unknown number', real: 'Verified business account', indicator: 'Check for green tick' },
 ];
 
 export default function LearningCenter() {
@@ -167,7 +167,7 @@ export default function LearningCenter() {
             </div>
           </div>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Cyber fraud se bachne ke tips seekhein, quiz attempt karein, aur apni safety score improve karein.
+            Learn tips to stay safe from cyber fraud, attempt quizzes, and improve your safety score.
           </p>
         </div>
 
@@ -181,7 +181,7 @@ export default function LearningCenter() {
                   </div>
                   <h2 className="text-2xl font-bold text-white mb-2">Quiz Complete!</h2>
                   <p className="text-gray-400 mb-6">
-                    Aapne score kiya: {score} / {selectedModule.quizzes.length}
+                    Your score: {score} / {selectedModule.quizzes.length}
                   </p>
                   <div className="flex items-center justify-center gap-4 mb-6">
                     <div className="text-center">
@@ -194,12 +194,12 @@ export default function LearningCenter() {
                   {score === selectedModule.quizzes.length ? (
                     <div className="p-4 rounded-xl bg-green-500/10 border border-green-500/30 mb-6">
                       <p className="text-green-400 font-medium">Perfect Score! 🎉</p>
-                      <p className="text-sm text-gray-400">Aap is topic mein expert hain!</p>
+                      <p className="text-sm text-gray-400">You are an expert on this topic!</p>
                     </div>
                   ) : (
                     <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 mb-6">
                       <p className="text-amber-400 font-medium">Keep Learning!</p>
-                      <p className="text-sm text-gray-400">Ek aur baar try karein.</p>
+                      <p className="text-sm text-gray-400">Try once more.</p>
                     </div>
                   )}
                   <button onClick={closeQuiz} className="btn-primary">
